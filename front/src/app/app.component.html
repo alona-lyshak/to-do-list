@@ -8,3 +8,5 @@
     <img class="theme" src="/assets/img/Sun.svg" alt="Theme">
   </div>
 </header>
+
+<task *ngFor="let task of tasksList; let i = index" [position]="i" [data]="task"></task>

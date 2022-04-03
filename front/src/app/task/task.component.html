@@ -1,0 +1,8 @@
+<div class="task" [ngClass]="themeList[position%themeList.length]">
+    <div class="top-line-task">
+        <h1 class="task-name">{{ data.taskName }}</h1>
+        <img class="img-delete" src="/assets/img/Delete.svg" alt="Delete task">
+    </div>
+    <p class="task-text">{{ data.taskText }}</p>
+    <div class="task-date">{{ data.taskDate | date: "shortTime"}}</div>
+</div>
